@@ -1,0 +1,114 @@
+html, body {
+	background-color: #f1f3f6;
+	color: #292E38;
+	font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+	margin: 0;
+}
+a, a:visited {
+	color: #4169b5;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+a:hover {
+	color: #294d96;
+	text-decoration: underline;
+}
+a:focus-visible {
+	outline: 2px solid #4169b5;
+	outline-offset: 3px;
+}
+#contents {
+	display: block;
+	grid-template-columns: 1fr 375px 1fr;
+}
+main {
+	background-color: #ffffff;
+	grid-column: 2;
+	margin: 0 auto;
+	max-width: 375px;
+	min-height: 10em;
+}
+header {
+	background-color: #3858e9;
+	color: #ffffff;
+	font-size: 24pt;
+	font-weight: bold;
+	padding: 0.3em;
+}
+header a, header a:visited, header a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+footer {
+	background-color: #3858e9;
+	color: #ffffff;
+	padding: 0.3em;
+}
+section {
+	border-bottom: solid 1px #e5e8ee;
+	letter-spacing: 0.05em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	padding: 0.2em;
+	white-space: pre-line;
+}
+section::first-line {
+	color: #344d80;
+	font-size: 24pt;
+	font-weight: bold;
+	line-height: 2;
+}
+iframe {
+	width: 100%;
+}
+nav {
+	display: block;
+	grid-column: 1;
+	letter-spacing: 0.05em;
+	margin: 0 auto;
+	max-width: 375px;
+	padding: 0;
+}
+nav a {
+	display: block;
+}
+nav a, nav a:visited {
+	color: #414957;
+	font-weight: bold;
+}
+nav a:hover {
+	color: #4169b5;
+}
+nav details {
+	margin: 1em 0;
+	padding: 0.25em;
+	background-color: #ffffff;
+	border: 1px solid #e5e8ee;
+}
+nav summary {
+	color: #344d80;
+	font-weight: bold;
+	cursor: pointer;
+}
+ul, .applink {
+	white-space: normal;
+}
+.applink img {
+	max-width: 40%;
+}
+@media (min-width: 800px) {
+	#contents {
+		display: grid;
+	}
+	nav {
+		justify-self: end;
+		margin: 0 1em 0 0;
+		min-width: 12em;
+	}
+	main {
+		padding: 0.25em;
+	}
+	main, nav details {
+		border-radius: 10px;
+	}
+}
