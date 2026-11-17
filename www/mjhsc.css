@@ -1,3 +1,6 @@
+*::first-line{
+	font-size: medium;
+}
 html, body {
 	background-color: #f1f3f6;
 	color: #292E38;
